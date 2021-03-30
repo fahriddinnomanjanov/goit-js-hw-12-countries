@@ -1,0 +1,13 @@
+.description {
+  text-align: center;
+}
+
+.card-countries {
+  display: flex;
+  width: 1200px;
+  justify-content: space-between;
+}
+
+.image {
+  width: 300px;
+}
