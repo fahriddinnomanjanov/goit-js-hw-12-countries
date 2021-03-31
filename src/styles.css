@@ -1,13 +1,90 @@
-.description {
+* {
+  margin: 0 auto;
+  padding: 0;
+}
+
+.section {
+  width: 1200px;
+  padding-right: 15px;
+  padding-left: 15px;
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+.title {
   text-align: center;
+  text-transform: uppercase;
+  font-size: 40px;
+  font-style: normal;
+  font-weight: bold;
+  margin-bottom: 30px;
+}
+.my-input {
+  display: block;
+  margin: 0 auto;
+  width: 400px;
+  height: 40px;
+  padding-left: 15px;
+  margin-bottom: 30px;
+}
+.countries-list {
+  text-transform: uppercase;
+  font-size: 40px;
+  font-style: normal;
+  font-weight: bold;
+  margin-bottom: 30px;
 }
 
 .card-countries {
-  display: flex;
-  width: 1200px;
-  justify-content: space-between;
+}
+.description {
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 40px;
+  font-style: normal;
+  font-weight: bold;
+  margin-bottom: 30px;
 }
 
+.main-box {
+  display: flex;
+  width: 1200px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  background-color: #fff;
+}
+.description-capital {
+  text-transform: uppercase;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: bold;
+  margin-bottom: 30px;
+}
+.population {
+  text-transform: uppercase;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: bold;
+  margin-bottom: 30px;
+}
+.list-languages {
+  text-transform: uppercase;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 900;
+}
+
+.item-countries {
+  text-transform: uppercase;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: normal;
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
 .image {
-  width: 300px;
+  width: 400px;
+}
+
+.pnotify {
+  margin-left: auto;
 }

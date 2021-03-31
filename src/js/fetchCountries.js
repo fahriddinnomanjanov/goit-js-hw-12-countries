@@ -1,6 +1,8 @@
 import country from '../templates/country.hbs'
 import countries from '../templates/countries.hbs'
 import _ from 'lodash'
+import '@pnotify/core/dist/BrightTheme.css';
+const { error } = require('@pnotify/core');
 
 const cardCountries = document.getElementById('card-countries')
 const myInput = document.getElementById('my-input')
@@ -13,6 +15,8 @@ function fetchCountries() {
     const baseURL = 'https://restcountries.eu/rest/v2';
     const countryName = this.value
     const countriesRequest = fetch(`${baseURL}/name/${countryName}`)
+    countriesList.innerHTML = '';
+    cardCountries.innerHTML = '';
 
     countriesRequest.then((response) => {
         if (!response.ok) {
@@ -28,11 +32,16 @@ function fetchCountries() {
         } else if (!myInput.value) {
             countriesList.innerHTML = '';
             cardCountries.innerHTML = '';
+        } else {
+            error({
+                text: 'Ввели слишком много стран',
+                delay: 600,
+                hude: true,
+            })
         }
-
-
+    }).catch(error => {
+        cardCountries.innerHTML = "";
     })
     }
-
 
 export default country;
